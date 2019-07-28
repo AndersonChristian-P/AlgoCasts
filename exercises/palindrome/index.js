@@ -7,6 +7,18 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// Determine if a string of characters is a palindrome
+
+isPalindrome = (str) => {
+  reverseStr = str.toLowerCase().split("").reverse().join("")
+
+  if (str === reverseStr) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(isPalindrome("trart"))
 
 module.exports = palindrome;
